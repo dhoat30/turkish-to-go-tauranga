@@ -37,7 +37,7 @@ else{
 	define( 'DB_NAME', 'dbykvz2yhw2kjp' );
 	define( 'DB_USER', 'utv7mtphmvu7y' );
 	define( 'DB_PASSWORD', '^@*%{2@22bk2' );
-	define( 'DB_HOST', 'localhost' );
+	define( 'DB_HOST', '127.0.0.1' );
 }
 
 
