@@ -1,174 +1,57 @@
-.header-img img{ 
+.navbar-section{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar-section>div{ 
     width: 100px;
-    display: block;
-    margin: 10px auto;
+    border: solid red;
 }
-@media (max-width:600px){
-    .header-img img{ 
-        width: 45px;
-        display: block;
-        margin: 0 auto;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0);
-    } 
-}
-/*navbar */ 
-.desktop-navbar .menu{ 
-    font-weight: 400;
-}
-.desktop-navbar{ 
-    display: flex;
-    flex-direction: row;
-}
-.mobile-navbar{
-    display: none;
-    padding: 10px 0;
-    position: relative;
-  
+.navbar-section>nav{ 
+    width: 100%;
+    border: solid red;
 }
 
-
-.desktop-navbar>div:nth-child(1){ 
-    width: 90%;
+/*logo */ 
+.navbar-section .logo img{ 
+    width: 80px;
+    height: auto;
 }
-.desktop-navbar>div:nth-child(2){ 
-    width: 10%;
-}
-.desktop-navbar ul{ 
-    display: flex;
-    flex-direction: row;
+.navbar-section nav>div>ul{ 
     list-style: none;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
-.desktop-navbar .menu a{ 
-    color: #454545;
+.navbar-section nav>div>ul>li{ 
+    margin: 0 0 0 30px;
+    position: relative;
+}
+.navbar-section nav ul a{ 
+    color: black;
     text-decoration: none;
 }
-.desktop-navbar .menu a:hover{ 
-    color: #24806C;
+.navbar-section nav ul a:hover{ 
+    color: red;
+    text-decoration: none;
 }
-.desktop-navbar .menu a:active{ 
-    color: #24806C;
-}
-
-
-/*serch icon*/ 
- .search-icon{ 
-    width: 20px;
-    height: 20px;
-cursor: pointer;
-}
-.navbar .close-icon{ 
-    width: 20px;
-    display: none;
-    cursor: pointer;
-}
-
-.navbar .search-bar-container{ 
-    position: relative;
-}
-.navbar .search-bar{ 
+/*submenu */ 
+.sub-menu{ 
+    position: absolute;
+    list-style: none;
     width: 300px;
-    position: absolute;
-    top: 30;
-    right: 100px;
+    margin-top: 5px;
     display: none;
 }
-
-
-@media (max-width:800px){ 
-    .desktop-navbar{ 
-        display: none;
-    }
-    .mobile-navbar{
-        display: block;
-        
-    }
-    .mobile-navbar li{ 
-        display: none;
-    }
-    .mobile-navbar ul{ 
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        justify-content: space-around;
-    }
-    .mobile-navbar .menu a{ 
-        color: #454545;
-        text-decoration: none;
-        display: block;
-        padding: 20px 10px;
-    }
-    .mobile-navbar .menu li:nth-child(even){ 
-        background: #FAFAFA;
-    }
-    .mobile-navbar .menu li:nth-child(odd){ 
-        background: white;
-    }
-    .mobile-navbar .menu a:hover{ 
-        color: #24806C;
-    }
-    .mobile-navbar .menu a:active{ 
-        color: #24806C;
-    }
-
-    .mobile-navbar .mobile-top-nav{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 5px;
-    }
-    .navbar .search-bar{ 
-        width: 250px;
-        position: absolute;
-        top: 30;
-        right: 10px;
-        display: none;
-    }
-    
-
-    .mobile-navbar .hamburger-menu span img{ 
-       width: 40px;
-        position: relative;
-        cursor: pointer;
-    }
-    .search-icon{ 
-        width: 30px;
-        height: 30px;
-    }
-    
-
+.sub-menu li a{ 
+    display: block;
+    padding: 10px 20px 10px 5px;
+    background-color:yellow;
 }
-
-/*submenu */
-.menu-item{ 
-    position: relative;
-} 
-.menu-item .sub-menu{ 
-    position: absolute;
-    padding: 20px 100px 20px 10px;
-    background: rgb(36,128,108);
-    display: none;
-}
-.menu-item .sub-menu a{ 
- color: white !important;
-}
-.plus-sign{ 
-    display: inline-block;
-    margin-left: 5px;
-    font-size: 20px;
-    color: rgb(36,128,108);
-    position: relative; 
-    top: 2px;
-}
-/*banner */ 
-.banner{ 
-    background: rgb(36,128,108);
-    display: none;
+.sub-menu li a:hover{ 
+    background-color:red;
     color: white !important;
-    margin: 0 0 10px 0;
-    padding: 10px 0;
-    background: linear-gradient(360deg, rgba(36,128,108,1) 0%, rgba(36,128,108,1) 35%, rgba(121,241,215,1) 100%); 
 }
+

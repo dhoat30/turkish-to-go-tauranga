@@ -14,73 +14,24 @@
 </head>
 <body <?php body_class( $post_slug);?> >
 
-    <div class="main-body">
-        <section class="row-container header-img">
-            <div class="res-width">
-                <img src="<?php echo get_theme_file_uri('img/logo.png') ?>" alt="Logo">
-            </div>
-        </section>
-    
-
-        <section class="row-container navbar">
-            <nav class="desktop-navbar column-margin">
-                <?php
-                    wp_nav_menu( array( 
-                        'theme_location' => 'fig_main_menu', 
-                        'container_class' => "main-menu"
-                        )); 
-                ?>
-                <div class="search-bar-container">
-                        <div class="search-bar-toggle">
-                            <img class="search-icon" src="<?php echo get_theme_file_uri('icons/search-icon.png');  ?>" alt="Search Icon">
-                            <img class="close-icon" src="<?php echo get_theme_file_uri('icons/close-icon.png');  ?>" alt="Search Icon">
-                        </div>
-
-                    <div class="search-bar">        
-                    <?php echo  do_shortcode('[ivory-search id="33" title="Default Search Form"]'); ?>
-                    </div>
-                </div>
-
-            </nav>
-
+    <section class="navbar-section row-container res-width">
+        <div class="logo">
             
-            <nav class="mobile-navbar column-margin">
-                <div class="mobile-top-nav">
-                    <div class="hamburger-menu">
-                        <span>
-                            <img src="<?php echo get_theme_file_uri('icons/hamburger-menu.png') ?>" alt="Mobile Menu Icon">
-                        </span>            
-                    </div>
+            <?php $imgURL =  wp_get_attachment_image_src(20);  //get the logo
+            ?>
+            <img src="<?php print_r($imgURL[0]);?>" alt="Turkish To Go Logo">
+        </div>
+        <nav>
+       
+            <?php
+                        wp_nav_menu( array( 
+                            'theme_location' => 'main_menu', 
+                            'container_class' => "main-menu"
+                            )); 
+                    ?>
+        </nav>
+    </section>
 
-                    <div class="search-bar-container">
-                        <div class="search-bar-toggle">
-                            <img class="search-icon" src="<?php echo get_theme_file_uri('icons/search-icon.png');  ?>" alt="Search Icon">
-                            <img class="close-icon" src="<?php echo get_theme_file_uri('icons/close-icon.png');  ?>" alt="Search Icon">
-                        </div>
-                    
-
-                        <div class="search-bar">        
-                        <?php echo  do_shortcode('[ivory-search id="33" title="Default Search Form"]'); ?>
-                        </div>
-                    </div>
-                        
-                </div>
-                
-
-
-                <?php
-                    wp_nav_menu( array( 
-                        'theme_location' => 'fig_main_menu', 
-                        'container_class' => "main-menu"
-                        )); 
-                ?>
-                
-
-            </nav>
-
-            
-
-        </section>
 
 
 
