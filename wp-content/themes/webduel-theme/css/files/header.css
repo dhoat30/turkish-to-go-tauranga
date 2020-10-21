@@ -7,16 +7,15 @@
 }
 .navbar-section>div{ 
     width: 100px;
-    border: solid red;
+    
 }
 .navbar-section>nav{ 
     width: 100%;
-    border: solid red;
 }
 
 /*logo */ 
 .navbar-section .logo img{ 
-    width: 80px;
+    width: 50px;
     height: auto;
 }
 .navbar-section nav>div>ul{ 
@@ -26,32 +25,56 @@
     justify-content: flex-end;
 }
 .navbar-section nav>div>ul>li{ 
-    margin: 0 0 0 30px;
+    margin: 0 0 0 50px;
     position: relative;
 }
 .navbar-section nav ul a{ 
     color: black;
     text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+.navbar-section nav ul li i{ 
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    left: auto;
+    right: -15px;
 }
 .navbar-section nav ul a:hover{ 
     color: red;
     text-decoration: none;
 }
+.navbar-section nav li:hover{ 
+    color: red !important;
+}
+
 /*submenu */ 
 .sub-menu{ 
     position: absolute;
     list-style: none;
-    width: 300px;
-    margin-top: 5px;
-    display: none;
+    width: 150px;
+    margin-top: 20px;
+    background-color:white
 }
 .sub-menu li a{ 
     display: block;
-    padding: 10px 20px 10px 5px;
-    background-color:yellow;
+    padding: 10px 10px 10px 5px;
+    font-size: 14px !important; 
+}
+.sub-menu li:nth-child(odd){
+     background: rgba(191,191,191,0.1);
+}
+.sub-menu li:nth-child(1){ 
+    border-top: solid red;
 }
 .sub-menu li a:hover{ 
     background-color:red;
     color: white !important;
 }
 
+
+.test{ 
+    height: 100vh;
+}

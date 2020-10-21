@@ -12,7 +12,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Noto Serif TC', serif;
+	font-family: 'Commissioner', sans-serif;
 }
 @media (max-width: 500px){ 
     *{ 
@@ -34,7 +34,7 @@
 	width: 95%;
 	margin-right: auto; 	
 	margin-left: auto;
-	max-width: 1500px;
+	max-width: 1200px;
 }
 
 /*fonts */ 

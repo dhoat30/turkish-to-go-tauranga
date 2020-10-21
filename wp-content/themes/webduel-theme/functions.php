@@ -2,8 +2,8 @@
 
 function theme_files() {
 
-  wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900');
-  wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+  wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap');
+  wp_enqueue_script('font-awesome-script', 'https://kit.fontawesome.com/a423fe72dd.js', array("jquery"), '1.0', true);
 
 
   if(strstr($_SERVER['SERVER_NAME'], 'localhost')){ 
@@ -11,8 +11,8 @@ function theme_files() {
   }
   else{
     wp_enqueue_script('our-vendor-js', get_theme_file_uri('/bundled-assets/undefined' ), array("jquery"), '1.0', true);
-    wp_enqueue_script('main-webduel-js', get_theme_file_uri('/bundled-assets/scripts.84733bf90741fd836a52.js' ), array("jquery"), '1.0', true);
-    wp_enqueue_style( 'our-main-styles', get_theme_file_uri('/bundled-assets/styles.84733bf90741fd836a52.css'));
+    wp_enqueue_script('main-webduel-js', get_theme_file_uri('/bundled-assets/scripts.04f057ee15f7dc33a5af.js' ), array("jquery"), '1.0', true);
+    wp_enqueue_style( 'our-main-styles', get_theme_file_uri('/bundled-assets/styles.04f057ee15f7dc33a5af.css'));
   }
   
 
